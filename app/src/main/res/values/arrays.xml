@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="procedure_array">
+        <item>1 Person Procedure</item>
+        <item>2 Person Procedure</item>
+        <item>3 Person Procedure</item>
+        <item>4 Person Procedure</item>
+        <item>5 Person Procedure</item>
+
+    </array>
+    
+    <array name="country_array">
+        <item>USA</item>
+        <item>CANADA</item>
+        <item>MEXICO</item>
+
+    </array>
+
+
+
+    
+</resources>

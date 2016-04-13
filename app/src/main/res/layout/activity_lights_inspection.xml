@@ -1,0 +1,443 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="cherry.android.com.cherry.LightsInspectionActivity"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+    <include
+        android:id="@+id/lightInspectionHeader"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        layout="@layout/app_header"
+        />
+
+    <RelativeLayout
+        android:layout_marginTop="1dp"
+        android:layout_below="@+id/lightInspectionHeader"
+        android:id="@+id/lightInspectionSubHeaderRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/app_background"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/allOkLightsInspectionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="All Ok"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="5dp"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/headerTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lights Inspections"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:layout_centerInParent="true"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/saveLightsInspectionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="Save"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:layout_alignParentRight="true"
+            android:paddingRight="5dp"
+            android:gravity="center_vertical|right"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/driveFrontPassTextView"
+        android:layout_below="@+id/lightInspectionSubHeaderRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="20dp">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@color/app_light_grey"
+            android:textColor="@android:color/white"
+            android:text="Drive Front"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginLeft="1dp"
+            android:background="@color/app_light_grey"
+            android:textColor="@android:color/white"
+            android:text="Pass Front"/>
+
+        </LinearLayout>
+
+<LinearLayout
+    android:layout_below="@+id/driveFrontPassTextView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+   >
+
+    <LinearLayout
+        android:id="@+id/driveFrontCornerLinearLayout"
+        android:layout_weight="1"
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/cornerDriveFrontButton"
+            android:layout_weight="0.25"
+            android:text="Corner"
+            android:textAllCaps="false"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/app_light_grey"
+            android:textColor="@android:color/black"/>
+
+        <Button
+            android:id="@+id/brightDriveFrontButton"
+            android:layout_weight="0.25"
+            android:text="Bright"
+            android:textAllCaps="false"
+            android:layout_marginLeft="1dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/app_light_grey"
+            android:textColor="@android:color/black"/>
+
+        <Button
+            android:id="@+id/brightPassFrontButton"
+            android:layout_weight="0.25"
+            android:text="Bright"
+            android:textAllCaps="false"
+            android:layout_marginLeft="1dp"
+            android:background="@color/app_light_grey"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@android:color/black"/>
+
+        <Button
+            android:id="@+id/cornerPassFrontButton"
+            android:layout_weight="0.25"
+            android:text="Corner"
+            android:textAllCaps="false"
+            android:layout_marginLeft="1dp"
+            android:background="@color/app_light_grey"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@android:color/black"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/driveFrontCornerLinearLayout"
+        android:id="@+id/driveFrontSideLinearLayout"
+        android:layout_weight="1"
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/sideTurnDriveFrontButton"
+            android:layout_weight="0.25"
+            android:text="Side Turn"
+            android:textAllCaps="false"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/app_light_grey"
+            android:textColor="@android:color/black"/>
+
+        <Button
+            android:id="@+id/headlightDriveFrontButton"
+            android:layout_weight="0.25"
+            android:text="Headlight"
+            android:textAllCaps="false"
+            android:layout_marginLeft="1dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/app_light_grey"
+            android:textColor="@android:color/black"/>
+
+        <Button
+            android:id="@+id/headlightPassFrontButton"
+            android:layout_weight="0.25"
+            android:text="Headlight"
+            android:textAllCaps="false"
+            android:layout_marginLeft="1dp"
+            android:background="@color/app_light_grey"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@android:color/black"/>
+
+        <Button
+            android:id="@+id/sideTurnPassFrontButton"
+            android:layout_weight="0.25"
+            android:text="Side Turn"
+            android:textAllCaps="false"
+            android:layout_marginLeft="1dp"
+            android:background="@color/app_light_grey"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@android:color/black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/driveFrontSideLinearLayout"
+        android:id="@+id/driveFrontTurnSignalLinearLayout"
+        android:layout_weight="1"
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/turnSignalDriveFrontButton"
+            android:layout_weight="0.05"
+            android:text="Turn Signal"
+            android:textAllCaps="false"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/app_light_grey"
+            android:textColor="@android:color/black"/>
+
+
+        <Button
+            android:id="@+id/hoodButton"
+            android:layout_weight="0.9"
+            android:text="Hood"
+            android:textAllCaps="false"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/app_light_grey"
+            android:textColor="@android:color/black"/>
+
+
+        <Button
+            android:id="@+id/turnSignalPassFrontButton"
+            android:layout_weight="0.05"
+            android:text="Turn Signal"
+            android:textAllCaps="false"
+            android:layout_marginLeft="1dp"
+            android:background="@color/app_light_grey"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@android:color/black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/driveRearPassTextView"
+        android:layout_below="@+id/driveFrontTurnSignalLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_marginTop="1dp"
+        android:layout_height="20dp">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@color/app_light_grey"
+            android:textColor="@android:color/white"
+            android:text="Drive Rear"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginLeft="1dp"
+            android:background="@color/app_light_grey"
+            android:textColor="@android:color/white"
+            android:text="Pass Rear"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/driveRearPassTextView"
+        android:id="@+id/driveRearTurnSignalLinearLayout"
+        android:layout_weight="1"
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/turnSignalDriveRearButton"
+            android:layout_weight="0.05"
+            android:text="Turn Signal"
+            android:textAllCaps="false"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/app_light_grey"
+            android:textColor="@android:color/black"/>
+
+
+        <Button
+            android:id="@+id/highMountButton"
+            android:layout_weight="0.9"
+            android:text="High Mount"
+            android:textAllCaps="false"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/app_light_grey"
+            android:textColor="@android:color/black"/>
+
+
+        <Button
+            android:id="@+id/turnSignalPassRearButton"
+            android:layout_weight="0.05"
+            android:text="Turn Signal"
+            android:textAllCaps="false"
+            android:layout_marginLeft="1dp"
+            android:background="@color/app_light_grey"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@android:color/black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/driveRearTurnSignalLinearLayout"
+        android:id="@+id/driveRearTailLinearLayout"
+        android:layout_weight="1"
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/tailLightDriveRearButton"
+            android:layout_weight="0.25"
+            android:text="Tail Light"
+            android:textAllCaps="false"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/app_light_grey"
+            android:textColor="@android:color/black"/>
+
+        <Button
+            android:id="@+id/driveCargoDriveRearButton"
+            android:layout_weight="0.25"
+            android:text="Driver Cargo"
+            android:textAllCaps="false"
+            android:layout_marginLeft="1dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/app_light_grey"
+            android:textColor="@android:color/black"/>
+
+        <Button
+            android:id="@+id/passCargoPassRearButton"
+            android:layout_weight="0.25"
+            android:text="Pass Cargo"
+            android:textAllCaps="false"
+            android:layout_marginLeft="1dp"
+            android:background="@color/app_light_grey"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@android:color/black"/>
+
+        <Button
+            android:id="@+id/tailLightPassRearButton"
+            android:layout_weight="0.25"
+            android:text="Tail Light"
+            android:textAllCaps="false"
+            android:layout_marginLeft="1dp"
+            android:background="@color/app_light_grey"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@android:color/black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/driveRearTailLinearLayout"
+        android:id="@+id/driveRearReverseLinearLayout"
+        android:layout_weight="1"
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/reverseDriveRearButton"
+            android:layout_weight="0.25"
+            android:text="Reverse"
+            android:textAllCaps="false"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/app_light_grey"
+            android:textColor="@android:color/black"/>
+
+        <Button
+            android:id="@+id/driveLicenceDriveRearButton"
+            android:layout_weight="0.25"
+            android:text="Drive License"
+            android:textAllCaps="false"
+            android:layout_marginLeft="1dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/app_light_grey"
+            android:textColor="@android:color/black"/>
+
+        <Button
+            android:id="@+id/passLicensePassRearButton"
+            android:layout_weight="0.25"
+            android:text="Pass License"
+            android:textAllCaps="false"
+            android:layout_marginLeft="1dp"
+            android:background="@color/app_light_grey"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@android:color/black"/>
+
+        <Button
+            android:id="@+id/reversePassRearButton"
+            android:layout_weight="0.25"
+            android:text="Reverse"
+            android:textAllCaps="false"
+            android:layout_marginLeft="1dp"
+            android:background="@color/app_light_grey"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@android:color/black"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+</RelativeLayout>

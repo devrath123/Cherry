@@ -1,0 +1,66 @@
+<!-- A DrawerLayout is intended to be used as the top-level content view using match_parent for both width and height to consume the full space available. -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<include
+    android:id="@+id/headerInspectionToComplete"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    layout="@layout/app_header"
+    />
+
+<!--<android.support.v4.widget.DrawerLayout
+   android:layout_below="@+id/headerInspectionToComplete"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cherry.android.com.cherry.InspectionsToCompleteActivity"
+    >-->
+
+    <!-- As the main content view, the view below consumes the entire
+         space available using match_parent in both dimensions. -->
+   <!-- <FrameLayout
+
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"/>-->
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:text="Submit"
+        android:textColor="@color/app_white"
+        android:background="@color/app_pink"
+        android:layout_height="60dp"/>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/headerInspectionToComplete"
+        android:layout_above="@+id/submitButton"
+        android:id="@+id/inspectionsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_margin="2dp"
+        android:clickable="true"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        />
+
+
+   <!-- <fragment android:id="@+id/navigation_drawer"
+              android:layout_width="@dimen/navigation_drawer_width"
+              android:layout_height="match_parent"
+              android:layout_gravity="end"
+              android:name="cherry.android.com.cherry.NavigationDrawerFragment"
+              tools:layout="@layout/activity_dashboard"/>
+-->
+<!--</android.support.v4.widget.DrawerLayout>-->
+
+
+
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="cherry.android.com.cherry.GeneralInspectionsActivity">
+
+    <include
+        android:id="@+id/generalInspectionHeader"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        layout="@layout/app_header"
+        />
+
+    <ExpandableListView
+        android:id="@+id/generalInspectionsExpandableListView"
+        android:layout_below="@+id/generalInspectionHeader"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ExpandableListView>
+
+
+</RelativeLayout>

@@ -1,0 +1,178 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="cherry.android.com.cherry.GeneralInspectionDetailActivity">
+
+    <include
+        android:id="@+id/generalInspectionDetailHeader"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        layout="@layout/app_header"
+        />
+
+    <RelativeLayout
+        android:layout_below="@+id/generalInspectionDetailHeader"
+        android:id="@+id/technicianHeaderRelativeLayout"
+        android:layout_width="match_parent"
+        android:background="@color/app_light_grey"
+        android:layout_height="30dp">
+
+        <TextView
+            android:id="@+id/technicianNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/app_white"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:text="Technician Name"/>
+
+        <TextView
+            android:id="@+id/saveGeneralInspectionDetailsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Save"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:gravity="right|center_vertical"
+            android:textColor="@color/app_white"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/technicianHeaderRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="7.5">
+
+        <FrameLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+        <TextView
+            android:id="@+id/customQuantityTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Custom Quantity"
+            android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/customQuantityEditText"
+                android:visibility="gone"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:hint="Enter Quantity"
+                android:text="1"
+                android:inputType="number"
+                android:textColorHint="@color/app_white"
+                android:maxLength="3"
+                android:textColor="@color/app_white"
+                android:layout_gravity="center"/>
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/app_light_grey"/>
+
+        <TextView
+            android:id="@+id/threeQuantityTextView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="3 Quantity"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/app_light_grey"/>
+
+        <TextView
+            android:id="@+id/twoQuantityTextView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="2 Quantity"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/app_light_grey"/>
+
+
+        <include
+            android:id="@+id/inspectionChildView"
+            android:layout_weight="1.5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            layout="@layout/expandablelistview_child_item"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/app_light_grey"/>
+
+
+        <TextView
+            android:id="@+id/oneDefaultCommentTextView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Default Comment 1"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/app_light_grey"/>
+
+
+        <TextView
+            android:id="@+id/twoDefaultCommentTextView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Default Comment 2"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/app_light_grey"/>
+
+        <FrameLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+        <TextView
+            android:id="@+id/customCommentTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Custom Comment"
+            android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/customCommentEditText"
+                android:visibility="gone"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:maxLength="25"
+                android:hint="Comment"
+                android:singleLine="true"
+                android:textColorHint="@color/app_white"
+                android:textColor="@color/app_white"
+                android:layout_gravity="center"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

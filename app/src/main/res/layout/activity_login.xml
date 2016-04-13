@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/app_background"
+                tools:context="cherry.android.com.cherry.LoginActivity"
+                >
+
+
+
+    <RelativeLayout
+        android:id="@+id/signInRelativeLayout"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/white_rounded_backgrounded"
+        >
+
+        <EditText
+            android:id="@+id/login_emailIdEditText"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:paddingLeft="20dp"
+            android:hint="Email"
+
+            android:singleLine="true"
+            android:background="@android:color/transparent"
+            android:maxLength="30"/>
+
+        <!--android:text="alissa@buildwithslate.com"-->
+
+        <TextView
+            android:id="@+id/blackTV"
+            android:layout_below="@+id/login_emailIdEditText"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/app_light_grey"/>
+
+        <EditText
+            android:id="@+id/login_passwordEditText"
+            android:paddingLeft="20dp"
+            android:layout_below="@+id/blackTV"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:singleLine="true"
+
+            android:background="@android:color/transparent"
+            android:maxLength="25"/>
+
+        <!--android:text="Test@123"-->
+
+        </RelativeLayout>
+
+    <ImageView
+        android:background="@drawable/appicon"
+        android:layout_above="@+id/signInRelativeLayout"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"/>
+
+    <!--<TextView
+        android:id="@+id/cherryTextView"
+        android:layout_marginBottom="20dp"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:background="@drawable/cherry"
+        android:layout_above="@+id/signInRelativeLayout"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        />-->
+
+    <Button
+        android:layout_below="@+id/signInRelativeLayout"
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:text="Login"
+        android:background="@drawable/light_grey_rounded_background"
+        android:textColor="@android:color/white"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="20dp"
+        />
+
+       <!-- <TextView
+            android:layout_below="@+id/loginButton"
+            android:layout_marginTop="40dp"
+            android:id="@+id/signUpTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Up for Cherry"
+            android:textColor="@android:color/white"
+            android:gravity="center"/>-->
+
+</RelativeLayout>

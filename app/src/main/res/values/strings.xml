@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Cherry Inspect</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_registration">RegistrationActivity</string>
+    <string name="title_activity_scan_vin">ScanVINActivity</string>
+    <string name="title_activity_inspections_to_complete">InspectionsToCompleteActivity</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+    <string name="title_activity_dashboard">DashboardActivity</string>
+    <string name="title_activity_lights_inspection">LightsInspectionActivity</string>
+    <string name="title_activity_customer_info">CustomerInfoActivity</string>
+    <string name="title_activity_general_inspections">GeneralInspectionsActivity</string>
+    <string name="title_activity_general_inspection_detail">GeneralInspectionDetailActivity</string>
+    <string name="title_activity_pending_inspections">PendingInspectionsActivity</string>
+    <string name="delete_action">Delete</string>
+
+
+    <!-- For VIN SCANNER ZXING -->
+
+</resources>

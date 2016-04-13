@@ -1,0 +1,169 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="cherry.android.com.cherry.DashboardActivity"
+                android:background="@color/app_background">
+
+    <RelativeLayout
+                    android:id="@+id/headerRelativeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/app_background"
+                    android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/headerTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menu"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:layout_centerInParent="true"
+            android:gravity="center"/>
+
+      <!--  <Button
+            android:id="@+id/closeButton"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/ic_close"
+            android:textColor="@android:color/white"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:gravity="center|center_vertical"/>
+-->
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/newCustomerRelativeLayout"
+        android:layout_below="@+id/headerRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/app_pink">
+
+        <TextView
+            android:id="@+id/newCustomerTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="New Customer"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:paddingLeft="10dp"/>
+
+        <ImageView
+            android:layout_toLeftOf="@+id/newCustomerTV"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/ic_menu_add"/>
+
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/branchRelativeLayout"
+        android:layout_below="@+id/newCustomerRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+        <ImageView
+            android:id="@+id/branchImageView"
+            android:layout_margin="10dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/branch"
+            />
+
+        <TextView
+            android:id="@+id/branchTextView"
+            android:layout_toRightOf="@+id/branchImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Branch Name"
+            android:textSize="16sp"
+            android:layout_margin="10dp"
+            android:textColor="@color/app_light_grey"
+            />
+
+        </RelativeLayout>
+    <TextView
+        android:id="@+id/singleLineTextView"
+        android:layout_below="@+id/branchRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/app_light_grey"/>
+
+    <RelativeLayout
+        android:id="@+id/inspectionsRelativeLayout"
+        android:layout_below="@+id/singleLineTextView"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+        <ImageView
+            android:id="@+id/inspectionImageView"
+            android:layout_margin="10dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/inspections"
+            />
+
+        <TextView
+            android:layout_toRightOf="@+id/inspectionImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Inspections "
+            android:textSize="16sp"
+            android:layout_margin="10dp"
+            android:textColor="@color/app_light_grey"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_below="@+id/inspectionsRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/app_light_grey"/>
+
+    <TextView
+        android:layout_above="@+id/footerRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/app_light_grey"/>
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log out"
+        android:textSize="16sp"
+        android:textColor="@color/app_light_grey"
+        android:textAllCaps="false"
+        android:layout_margin="20dp"
+        android:background="@android:color/transparent"
+        android:layout_above="@+id/footerRelativeLayout"/>
+
+    <RelativeLayout
+        android:id="@+id/footerRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true">
+
+
+        <ImageView
+
+            android:background="@drawable/appicon"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+</RelativeLayout>

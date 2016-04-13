@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/inspection_TextView_Row"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="2dp"
+        android:textColor="@color/app_light_grey"
+        />
+
+    <LinearLayout
+        android:id="@+id/inspectionRowLL"
+        android:layout_below="@+id/inspection_TextView_Row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/inspectionImageView"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="0.20"
+            android:layout_margin="5dp"
+            android:src="@drawable/transfer_case"
+            android:layout_gravity="center_vertical"
+            />
+
+        <TextView
+            android:layout_weight="0.1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:id="@+id/chechedCircularImageView"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="0.20"
+            android:layout_margin="5dp"
+            android:src="@drawable/checked_unselected"
+            android:layout_gravity="center_vertical"
+            />
+
+        <TextView
+            android:layout_weight="0.1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:layout_weight="0.20"
+            android:id="@+id/recordCircularImageView"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/record_unselected"
+            />
+
+
+       <TextView
+            android:layout_weight="0.05"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:id="@+id/menuCircularImageView"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="0.15"
+            android:layout_marginTop="2dp"
+            android:src="@drawable/ic_dots"
+            android:layout_gravity="top|right"
+            android:layout_marginBottom="10dp"
+            />
+
+        <!--android:background="@drawable/circle"-->
+
+    </LinearLayout>
+    <TextView
+        android:layout_below="@+id/inspectionRowLL"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"/>
+</RelativeLayout>
